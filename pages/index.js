@@ -1,65 +1,29 @@
+import React from 'react'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Layout from '../src/components/Layout'
+import { Container, Row, Col, Button, Image } from 'react-bootstrap'
 
-export default function Home() {
+export default function Home () {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+    <div>
+      <Layout title="RAIN.DEV | Your partner IT solutions for your bussines">
+        <Container>
+          <Row className="home-intro">
+            <Col md={7}>
+              <h1 className="intro-title">
+                Rain Developer Website.
+            </h1>
+              <p>Hi, welcome to our website, glad to help your problem using technologies.</p>
+              <Button>
+                Get in Touch
+            </Button>
+            </Col>
+            <Col md={5}>
+              <Image src="./assets/programming.png" className="intro-image" />
+            </Col>
+          </Row>
+        </Container>
+      </Layout>
     </div>
   )
 }

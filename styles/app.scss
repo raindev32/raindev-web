@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+}
+
+a[href] {
+	color: #000;
+}
+
+.container {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.brand-text {
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
+
+.navbar {
+	margin-top: 50px;
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.nav-links {
+		display: flex;
+		margin-left: auto;
+		list-style: none;
+
+		.nav-item {
+			position: relative;
+			display: inline-block;
+			margin-left: 20px;
+			margin-right: 20px;
+			text-decoration: none;
+			transition: opacity .3s;
+
+			&.active {
+				font-weight: 700;
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: -10px;
+					left: 0;
+					width: 25px;
+					height: 2px;
+					background-color: #000;
+				}
+			}
+
+			&:hover {
+				opacity: .5;
+			}
+		}
+	}
+}
+
+.home-intro {
+	padding-top: 50px;
+}
+
+.portfolio-wrapper {
+	display: flex;
+	margin-left: -10px;
+	margin-right: -10px;
+	justify-content: center;
+	padding-top: 30px;
+
+	.portfolio-item {
+		width: 50%;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+
+		.portfolio-image {
+			max-width: 100%;
+		}
+
+		.portfolio-name {
+			font-size: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			text-transform: capitalize;
+		}
+
+		.portfolio-category {
+			color: #999;
+		}
+	}
+}
+
+.contact-links {
+	padding: 0;
+	padding-left: 15px;
+	margin-top: -10px;
+	list-style: square;
+
+	.contact-item {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+.intro-image {
+	width: 100%;
+	padding-top: 5px;
+}
+
+.intro-title {
+	font-weight: bold;
+}
+
+.services-page {
+	padding-top: 20px;
+	align-self: center;
+
+	.services-title {
+		font-weight: bold;
+
+	}
+
+	.services-card {
+		width: '18rem';
+	}
+
+	.services-image {
+		width: 100%
+	}
+}
+
+
+.footer {
+	font-size: 15px;
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	// position:  absolute;
+	bottom: 20px
+}
