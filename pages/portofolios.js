@@ -6,8 +6,8 @@ export default function Portfolio () {
     { title: "MyBox App", category: "Mobile Dev", image: "assets/portofolios/5.jpeg" },
     { title: "Event App", category: "Mobile Dev", image: "assets/portofolios/1.jpeg" },
     { title: "Clothing Print App", category: "Mobile Dev", image: "assets/portofolios/3.jpeg" },
-    { title: "Depot App", category: "Mobile Dev", image: "assets/portofolios/4.jpeg" },
-    { title: "Lelang App", category: "Mobile Dev", image: "assets/portofolios/2.jpeg" }
+    { title: "Lelang App", category: "Mobile Dev", image: "assets/portofolios/2.jpeg" },
+    { title: "Depot App", category: "Mobile Dev", image: "assets/portofolios/4.jpeg" }
   ]
 
   return (
